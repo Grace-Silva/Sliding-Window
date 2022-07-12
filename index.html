@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <title>Sliding Window</title>
+    <!-- Favicon, generated for: https://www.favicon-generator.org/-->
+    <link rel="icon" href="img/apple-icon-72x72.png">
+    <!-- FontAwesome: https://fontawesome.com/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">   
+    <!-- Font Google: https://fonts.google.com/specimen/Fira+Sans?query=fira --> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400&display=swap">
+    <!-- JQuery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Local Files: -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Start Main Container -->
+  <div class="main-container">  
+   
+    <nav class="nav-main"> <!-- Start Navigation Bar -->
+       <a href="#" class="logo" title="Logotipo">Gizmo Corp®</a><!-- Logo -->
+        <ul class="nav-menu"><!-- Navigation Links -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul> <!-- End Navigation Links -->
+    </nav> <!-- End Navigation Bar -->
+    
+    <!-- Start Showcase -->
+    <div class="showcase"> 
+        <h2>Title and Description</h2>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p> 
+        <a href="#" class="btn">Read More >></a>     
+   </div> <!-- End Showcase -->
+
+  </div> <!-- End Main Container -->
+
+    <!-- Start Footer Links -->
+    <div class="footer-links">
+        <div class="footer-container">
+           <ul> <!-- Block # 1 -->
+               <li><a href=""></a><h3>Gizmo Corp®</h3></li>
+                <li><a href="">Links # 1</a></li>
+                <li><a href="">Links # 1</a></li>
+                <li><a href="">Links # 1</a></li>
+            </ul>
+            
+            <ul> <!-- Block # 2 -->
+               <li><a href=""></a><h3>Follow Us</h3></li>               
+                <li><a href=""><i class="fab fa-facebook"></i> Gizmo Corp </a></li>
+                <li><a href=""><i class="fab fa-instagram"></i> @gizmocorp</a></li>
+                <li><a href=""><i class="fab fa-twitter"></i> @GizmoCorpOfficial</a></li>
+            </ul>  
+            
+            <ul> <!-- Block # 3 -->
+               <li><a href=""></a><h3>Terms of Use</h3></li>                   
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Legal Info</a></li>
+            </ul>              
+        </div> 
+    </div> <!-- End Footer Links -->
+    
+    <!-- Start Footer and CopyRight: -->    
+    <footer class="footer">
+        <a href="#">2021 Gizmo Corp ® All Rights Reserved</a>
+    </footer> <!-- End Footer and CopyRight -->
+    
+     <!-- Start Login Page -->
+    <div class="login-box">     
+    <!-- Close Login Page (X)-->   
+    <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+        <form class="login-form" action="index.html" method="post">
+            <h1>Welcome to Gizmoland</h1>
+            <input class="txtb" type="text" name="" placeholder="UserName">
+            <input class="txtb" type="password" name="" placeholder="PassWord">
+            <input class="login-btn" type="submit" name="" value="Login">
+        </form>
+    </div>
+    
+    <!-- Start Button Up -->
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+  
+  
+   <!-- Scripts: -->
+   
+    <!-- Script Show Login Page -->
+    <script type="text/javascript">
+        $(".btn").on("click", function(){
+            $(".login-box").toggleClass("showed");
+        });
+        $(".hide-login-btn").on("click", function(){
+            $(".login-box").toggleClass("showed");
+        }); 
+    </script> <!-- End Show Login Page -->
+    <!-- Script Button Up -->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>    
+</body>
+</html>
